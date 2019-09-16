@@ -40,7 +40,6 @@ public struct ActionRecord: XCResultObject {
             endedTime = try xcRequired(element: "endedTime", from: json)
             runDestination = try xcRequired(element: "runDestination", from: json)
         } catch {
-            print("Error parsing ActionRecord: \(error.localizedDescription)")
             return nil
         }
     }

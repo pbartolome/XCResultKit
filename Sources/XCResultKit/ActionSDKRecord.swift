@@ -27,7 +27,6 @@ public struct ActionSDKRecord: XCResultObject {
             operatingSystemVersion = try xcRequired(element: "operatingSystemVersion", from: json)
             isInternal = xcOptional(element: "isInternal", from: json)
         } catch {
-            print("Error parsing ActionSDKRecord: \(error.localizedDescription)")
             return nil
         }
     }

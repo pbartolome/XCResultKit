@@ -38,7 +38,6 @@ public struct ActionTestMetadata: XCResultObject {
             failureSummariesCount = xcOptional(element: "failureSummariesCount", from: json)
             activitySummariesCount = xcOptional(element: "activitySummariesCount", from: json)
         } catch {
-            print("Error parsing ActionTestMetadata: \(error.localizedDescription)")
             return nil
         }
     }
